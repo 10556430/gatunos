@@ -1,0 +1,13 @@
+/*carrusel index */
+img {
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+

@@ -1,0 +1,214 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <title>Gatuno</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font 
+    <link href="css/font-awesome.min.css" rel="stylesheet">-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+  	<link href="css/style_formulario.css" rel="stylesheet">
+	
+
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#home"></a>
+        <img src="img/logo.jpg">
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav" >
+					<li class="menuItem"><a href="index2.html">Inicio</a></li>
+					<li class="menuItem"><a href="formulario.html">Registro</a></li>
+					<li class="menuItem"><a href="galery2.html">Imagenes</a></li>
+				
+				</ul>
+			</div>
+		   
+		</div>
+	</nav> 
+
+	<!-- Contact -->
+	<div id="contact" class="content-section-a">
+		<div class="container">
+			<div class="row">
+			
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Formulario de Registro</h2>
+			</div>
+			
+		<form role="form" action="" method="post" >
+		<div class="col-md-6">
+          <div class="form-group">
+						<label for="InputEmail">Correo electrónico</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Ingrese correo" required  >
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+          <div class="form-group">
+						<label for="InputRut">Run</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="rut" id="rut" placeholder="Ingrese rut 105564309" required oninput="checkRut(this)" minlength="7">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="InputName">Nombre completo</label>
+						<div class="input-group">
+							<input type="text" onkeypress="return soloLetras(event)" class="form-control" name="InputName" id="InputName" placeholder="Ingrese nombre" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+          <div class="form-group">
+						<label for="InputFechaNac">Fecha de nacimiento</label>
+						<div class="input-group">
+							<input type="number" class="form-control" name="InputFechaNac" id="InputFechaNac" placeholder="Ingrese fecha de nacimiento" required max="2000" min="1900">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+          <div class="form-group">
+						<label for="InputFechaNac">Teléfono de contacto</label>
+						<div class="input-group">
+							<input type="number" class="form-control" name="InputTeléfono" id="InputTeléfono" placeholder="Ingrese Teléfono" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+		  <label for="InputRegion">Región</label>
+			<div class="input-group">
+				<select class="form-select" aria-label="Default select example" required>
+					<option></option>
+					<option value="1">Tarapacá</option>
+					<option value="2">Antofagasta</option>
+					<option value="3">Atacama</option>
+					<option value="4">Coquimbo</option>
+					<option value="5">Valparaíso</option>
+					<option value="6">O'Higgins</option>
+					<option value="7">Maule</option>
+					<option value="8">Biobío</option>
+					<option value="9">La Araucanía</option>
+					<option value="10">De Los Lagos</option>
+					<option value="11">Aysén</option>
+					<option value="12">Magallanes</option>
+					<option value="13">Metropolitana</option>
+					<option value="14">De Los Ríos</option>
+					<option value="15">De Arica y Parinacota</option>
+					<option value="16">De Ñuble</option>
+				</select>
+			</div>
+      
+ 
+			<label for="InputCiudad">Ciudad</label>
+			<div class="input-group">
+				<select class="form-select" aria-label="Default select example">
+					<option></option>
+					<option value="1">Iquique</option>
+					<option value="2">Antofagasta</option>
+					<option value="3">Copiapó</option>
+					<option value="4">La Serena</option>
+					<option value="5">Valparaíso</option>
+					<option value="6">Rancagua</option>
+					<option value="7">Talca</option>
+					<option value="8">Concepción</option>
+					<option value="9">Temuco</option>
+					<option value="10">Puerto Montt</option>
+					<option value="11">Coyhaique</option>
+					<option value="12">Punta Arenas</option>
+					<option value="13">Santiago</option>
+					<option value="14">Valdivia</option>
+					<option value="15">Arica</option>
+					<option value="16">Chillán</option>			
+				</select>
+			</div>					
+
+          <label for="InputVivienda">Tipo de Vivienda</label>
+          <div class="input-group">
+            <select class="form-select" aria-label="Default select example">
+              <option></option>
+              <option value="1">Casa con patio grande</option>
+              <option value="2">Casa con patio pequeño</option>
+              <option value="3">Casa sin patio</option>
+              <option value="4">Departamento</option>
+              
+            </select>
+          </div>
+
+			<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+		</div>
+		</form>
+			
+			<hr class="featurette-divider hidden-lg">
+				<div class="col-md-5 col-md-push-1 address">
+					<h3>Regístrate para adoptar</h3>
+					<p>Nuestras mascotas esperan por tí</p>
+					<img src="img/pngwing.com.png" >
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h4 class="footer-title">¡Síguenos!</h4>
+			<h4>En nuestras redes sociales</h4>
+			<li class="social"> 
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-size"> </i></a>
+			<a href="https://twitter.com/"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+			<a href="https://www.instagram.com/"><i class="fa  fa-instagram fa-size"> </i> </a> 
+			<a href="https://www.youtube.com/"><i class="fa  fa-youtube-square fa-size"> </i> </a>
+			</li>
+		   
+          </div> <!-- /col-xs-7 -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+	<script src="js/script.js"></script>
+	
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<script src="js/validador.js"></script>
+</body>
+
+</html>
